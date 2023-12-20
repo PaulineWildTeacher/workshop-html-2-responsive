@@ -1,0 +1,37 @@
+:root {
+    --main-color: #a306b6;
+    --secondary-color: #edddef;
+    --white: #fff;
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    margin-left: 1rem;
+}
+
+header h1 {
+    font-size: clamp(1rem, 1.5rem, 2rem);
+}
+
+main {
+    width: 60%;
+    margin: auto;
+}
+
+.featured-posts {
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+section article:first-of-type {
+    grid-column: unset;
+    grid-row: span 2;
+}
+
+section.featured-posts h2 {
+    grid-column: 1 / -1;
+ }
+ 
+ 

@@ -1,0 +1,81 @@
+:root {
+    --main-color: #a306b6;
+    --secondary-color: #edddef;
+    --white: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: var(--secondary-color);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--main-color);
+    color: var(--white);
+
+}
+
+ul li {
+    list-style: none;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    color: var(--white);
+    background: url(https://fastly.picsum.photos/id/865/1920/600.jpg?hmac=i_5zwxaIre5SM72DjBxco9AvGVhnk9nhUabmK0wFVZo) no-repeat;
+    background-size: cover;
+}
+
+main {
+    padding: 2rem;
+}
+
+section h2 {
+    margin-bottom: 1rem;
+}
+
+.featured-posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.featured-posts h2 {
+    margin-top: 1rem;
+}
+
+article {
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+article h1 {
+    color: var(--main-color);
+}
+
+article:first-of-type {
+    grid-column: span 2;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 1rem;
+    background-color: var(--main-color);
+    color: var(--white);
+}
